@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script type="text/javascript">
+        function validate(){
+            
+            
+            if(document.getElementById("Name").value==="")
+            {
+                document.getElementById("sName").innerHTML="Enter the name"
+                document.getElementById("sName").style.color="red"   
+            }
+            else
+            {
+                document.getElementById("sName").innerHTML="yes validate"
+                document.getElementById("sName").style.color="green"  
+            }
+        }
+
+    </script>
+    </head>
+    <body>
+        <form action="check.html" method="get" onsubmit="validate()">
+            <label>Enter your Name:</label>
+            <input type="text" placeholder="Enter your name" id="Name"><span id="sName"></span><br><br><br>
+
+        <!--<label>Enter your Password:</label>
+            <input type="password" placeholder="password" name="password"><span id="spassword"></span><br><br><br>
+
+            <label>Enter your Confirm Password:</label>
+            <input type="text" placeholder="confirmpassword" id="confirmpassword"><span id="sconfirmpassword"></span>
+            <br><br><br>
+            <label>choose your gender:</label>
+            Male<input type="radio" placeholder="" id="Male"><span id="sMale"></span>
+            Female<input type="radio" placeholder="" id="Female"><br><br><br><span id="sFemale"></span>
+
+            <select>
+                <option>CHOOSE YOUR COURSE</option><span id="sselect"></span>
+                <option value="c">C language</option>
+                <option value="jfs">java full stack</option>
+                <option value="mern">Mern stack</option>
+            </select>
+            <br><br><br>-->
+
+            <input type ="submit" placeholder="Submit" id="submit" value="click"><br><br><br>
+
+
+        </form>
+    </body>
+    </html>
