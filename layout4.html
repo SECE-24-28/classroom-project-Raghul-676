@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .anibox
+        {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .box
+        {
+            width: 60px;
+            height: 60px;
+            background-color: aquamarine;
+            animation: move 4s linear 1s infinite alternate;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(-150px);
+                background-color:darkgoldenrod;
+                } 
+            25% {
+                transform: translateX(0);
+                background-color: aquamarine;
+                }
+            50% {
+                transform: translateX(150px);
+                background-color: bisque;
+                }
+            75% {
+                transform: translateX(0);
+                background-color: aquamarine;
+                }
+            100%{
+                transform: translateX(-150px);
+                background-color:darkgoldenrod;
+                }
+        }
+
+    </style>
+</head>
+<body style="background-color: white;
+            width: 80%;
+            margin: auto;">
+
+        <div style="margin-bottom: 200;
+                background-color: lightgray;
+                min-height: 5;
+                line-height: 5;
+                width: 100%;
+                padding-left: 20px;
+                box-sizing: border-box;
+                
+                ">
+        <p style="font-size: 25px;"><b>Logo</b></p>
+    </div>
+
+        <div style="width: 100%;
+                min-height: 200px;
+                display: flex;
+                gap:20px;">
+
+        <div style="flex-direction: row;
+                    width: 30%;
+                    min-height: 250px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    
+                    ">
+            <p><b>SideBar  Navigation</b></p>
+
+        </div>
+        
+        <div style="background-color: lightgray;
+                    flex-direction: row;
+                    width: 80%;
+                    min-height: 250px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    ">
+            <p><b>Header/Banner</b></p>
+
+        </div>
+
+    </div>
+
+            <div style="width: 100%;
+                min-height: 200px;
+                display: flex;
+                gap:20px;">
+
+        <div style="flex-direction: row;
+                    width: 30%;
+                    min-height: 250px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                    ">
+
+
+        </div>
+        
+        <div style="background-color: lightgray;
+                    flex-direction: row;
+                    width: 80%;
+                    min-height: 550px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+
+                    ">
+            <p><b>Header/Banner</b></p>
+
+        </div>
+
+    </div>
+
+                    <div style="margin-bottom: 200;
+                background-color: lightgray;
+                min-height: 3;
+                line-height: 3;
+                width: 100%;
+                padding-left: 20px;
+                box-sizing: border-box;
+                text-align: center;
+                
+                ">
+        <p style="font-size: 30px;"><b>footer</b></p>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="anibox">
+    <div class="box"></div>
+    </div>
+    
+</body>
+</html>
